@@ -25,9 +25,22 @@ h1{
   padding: 10px;
 }
 .panel-heading{
-  background-color: rgb(100, 85, 85);
+  background-color: rgb(117, 117, 117);
 }
 
 button{
-  background-color: rgb(100, 85, 85);
+  background-color: rgb(117, 117, 117);
+  height: 7%;
+  width:10%;
+  margin-top: 15px;
+  text-align: center;
+  margin-left: 45%;
+}
+form{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* background-color: rgb(100, 85, 85); */
+}
+
+.container{
+  background-color: rgb(141, 141, 141);
 }
