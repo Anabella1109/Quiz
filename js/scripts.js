@@ -62,15 +62,9 @@ function correctionOfQuiz(one,two,three,four,five,six,seven,eight,nine,ten,eleve
     finalGrade+=2;
   }
   return finalGrade;
-//   console.log(finalGrade);
+
 }
 
-// function grader(answer){
-//   var finalGrade=0;
-  
-      
-//   }
-// }
 
 
 
@@ -109,16 +103,10 @@ $(document).ready(function(){
       var answer20=$("input:radio[name=twentiethQuestion]:checked").val();
       
       
-    //   var answers=[answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,answer11,answer12,answer13,answer14,answer15,answer16,answer17,answer18,answer19,answer20];
+   
       correctionOfQuiz(answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,answer11,answer12,answer13,answer14,answer15,answer16,answer17,answer18,answer19,answer20);
-    //   answers=[answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,answer11,answer12,answer13,answer14,answer15,answer16,answer17,answer18,answer19,answer20];
-  
-      
-//   answers.forEach(function(answer){
-//       finalGrade=0;
-//     if(answer==true){
-//         finalGrade+=2;}
-//   });
+    
+
  console.log(finalGrade)
   $("#phrase").show();
   display(finalGrade);
