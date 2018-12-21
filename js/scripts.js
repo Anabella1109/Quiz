@@ -1,8 +1,93 @@
+var finalGrade=0;
+function correctionOfQuiz(one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeen,eighteen,nineteen,twenty){
+    
+    if(one==="d"){
+       finalGrade+=2;
+}
+  if(two==="d"){
+    finalGrade+=2;
+  }
+  if(three==="c"){
+    finalGrade+=2;
+  }
+  if(four==="a"){
+    finalGrade+=2;
+  }
+  if(five==="c"){
+    finalGrade+=2;
+  }
+  if(six==="d"){
+    finalGrade+=2;
+  }
+  if(seven==="b"){
+    finalGrade+=2;
+  }
+  if(eight==="c"){
+    finalGrade+=2;
+  }
+  if(nine==="a"){
+    finalGrade+=2;
+  }
+  if(ten==="b"){
+    finalGrade+=2;
+  }
+  if(eleven==="b"){
+    finalGrade+=2;
+  }
+  if(twelve==="b"){
+    finalGrade+=2;
+  }
+  if(thirteen==="d"){
+    finalGrade+=2;
+  }
+  if(fourteen==="d"){
+    finalGrade+=2;
+  }
+  if(fifteen==="a"){
+    finalGrade+=2;
+  }
+  if(sixteen==="c"){
+    finalGrade+=2;
+  }
+  if(seventeen==="d"){
+    finalGrade+=2;
+  }
+  if(eighteen==="d"){
+    finalGrade+=2;
+  }
+  if(nineteen==="c"){
+    finalGrade+=2;
+  }
+  if(twenty==="c"){
+    finalGrade+=2;
+  }
+  return finalGrade;
+//   console.log(finalGrade);
+}
+
+// function grader(answer){
+//   var finalGrade=0;
+  
+      
+//   }
+// }
+
+
+
+
+
+function display(final){
+  document.getElementById("score").innerHTML=final;
+}
+
+
+
+
+
 $(document).ready(function(){
     $("form#quiz").submit(function(event){
       event.preventDefault();
       var answer1=$("input:radio[name=firstQuestion]:checked").val();
-      
       var answer2=$("input:radio[name=secondQuestion]:checked").val();
       var answer3=$("input:radio[name=thirdQuestion]:checked").val();
       var answer4=$("input:radio[name=fourthQuestion]:checked").val();
@@ -22,45 +107,25 @@ $(document).ready(function(){
       var answer18=$("input:radio[name=eighteenthQuestion]:checked").val();
       var answer19=$("input:radio[name=nineteenthQuestion]:checked").val();
       var answer20=$("input:radio[name=twentiethQuestion]:checked").val();
-      var finalGrade=0;
-     
-      var answers=[answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,answer11,answer12,answer13,answer14,answer15,answer16,answer17,answer18,answer19,answer20];
+      
+      
+    //   var answers=[answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,answer11,answer12,answer13,answer14,answer15,answer16,answer17,answer18,answer19,answer20];
       correctionOfQuiz(answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,answer11,answer12,answer13,answer14,answer15,answer16,answer17,answer18,answer19,answer20);
-      console.log(answer1);
-      
-      
+    //   answers=[answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,answer11,answer12,answer13,answer14,answer15,answer16,answer17,answer18,answer19,answer20];
   
       
-  answers.forEach(function(answer){
-          if(answer===true){
-              console.log(answer);
-              finalGrade+=2;
-          }
-  });
-  console.log(finalGrade);
+//   answers.forEach(function(answer){
+//       finalGrade=0;
+//     if(answer==true){
+//         finalGrade+=2;}
+//   });
+ console.log(finalGrade)
   $("#phrase").show();
-   display(finalGrade);
+  display(finalGrade);
   $("form#quiz").hide();
   
   
   
   });
   });
-
-
-// function grader(answer){
-//     var finalGrade=0;
-//      if(answer==true){
-//         finalGrade+=2;
-        
-//     }
-// }
-
-function display(final){
-    document.getElementById("score").innerHTML=final;
-}
-
-
-
-
 
