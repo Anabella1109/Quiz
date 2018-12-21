@@ -6,8 +6,8 @@
   width:560px;
 }
 .row{
-  border-left:2px solid grey;
-  border-top: 2px solid grey;
+  border-left:2px solid rgb(121, 120, 120);
+  border-top: 2px solid rgb(121, 120, 120);
   margin-top: 20px;
 }
 h1,h5{
@@ -43,4 +43,12 @@ form{
 
 .container{
   background-color: rgb(141, 141, 141);
+}
+#phrase{
+  display: none;
+}
+.qtn{
+  font-style: italic;
+  color: white;
+  padding-bottom: 4px;
 }
