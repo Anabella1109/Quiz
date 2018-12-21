@@ -73,6 +73,8 @@ function grader(answer){
 
 
 $(document).ready(function(){
+  $("form#quiz").submit(function(event){
+    event.preventDefault();
     var answer1=$("input:radio[name=firstQuestion]:checked").val();
     var answer2=$("input:radio[name=secondQuestion]:checked").val();
     var answer3=$("input:radio[name=thirdQuestion]:checked").val();
@@ -93,13 +95,16 @@ $(document).ready(function(){
     var answer18=$("input:radio[name=eighteenthQuestion]:checked").val();
     var answer19=$("input:radio[name=nineteenthQuestion]:checked").val();
     var answer20=$("input:radio[name=twentiethQuestion]:checked").val();
+    var finalGrade=0;
     correctionOfQuiz();
 
     var answers=[answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,answer11,answer12,answer13,answer14,answer15,answer16,answer17,answer18,answer19,answer20];
 answers.forEach(function(answer){
         grader(answer);
 });
+$("#phrase").show();
 
 
 
-})
+});
+});
