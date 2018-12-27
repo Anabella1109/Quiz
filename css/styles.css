@@ -46,6 +46,8 @@ form{
 }
 #phrase{
   display: none;
+      font-family: 'Courier New', Courier, monospace;
+
 }
 .qtn{
   font-style: italic;
