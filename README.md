@@ -14,6 +14,7 @@ This webpage contains a multiple choice JavaScript quiz where a user can choose 
 
 ## SPECS
 
+
 * The program should have multiple answers for the user to choose among
     * Input Example: selected an answer on a question
     * Output Example: your score is 2/40
