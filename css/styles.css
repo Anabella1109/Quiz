@@ -46,12 +46,15 @@ form{
 }
 #phrase{
   display: none;
+      font-family: 'Courier New', Courier, monospace;
+
 }
 .qtn{
   font-style: italic;
   color: white;
   padding-bottom: 4px;
 }
+
 #score{
   font-size:50px;
 }
@@ -60,3 +63,5 @@ form{
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
 }
+
+
