@@ -2,7 +2,7 @@ var finalGrade=0;
 function correctionOfQuiz(one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeen,eighteen,nineteen,twenty){
     
   if(one==="d"){
-       finalGrade+=2;
+    finalGrade+=2;
 }
   if(two==="d"){
     finalGrade+=2;
@@ -66,7 +66,7 @@ function correctionOfQuiz(one,two,three,four,five,six,seven,eight,nine,ten,eleve
 }
 
 function display(final){
-  document.getElementById("score").innerHTML=final;
+  document.getElementById("score").innerHTML=final+"/40";
 }
 
 

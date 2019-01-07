@@ -14,24 +14,21 @@ This webpage contains a multiple choice JavaScript quiz where a user can choose 
 
 ## SPECS
 
-* The program should accept input from the user.
-    * Input Example: 1,1,1
-    * Output Example: This is an Equilateral triangle
-* The program should recognize positive numbers
-    * Input Example: -1,1,1
-    * Output Example: Please enter positive numbers different from zero only
-* The program should return when a trinangle can't be created
-   * Input Example: 2,3,7
-    * Output Example: This is not a triangle
-* The program should return an equilateral triangle is detected
-    * Input Example: 2,2,2
-    * Output Example: This an equilateral triangle
-* The program should return when an isosceles triangle is detected
-    * Input Example: 2,2,4
-    * Output Example: This is an isosceles
-* The  program should return when a scalene triangle is detected 
-    * Input Example: 12,13,14
-    * Output Example:This is a scalene triangle
+* The program should have multiple answers for the user to choose among
+    * Input Example: selected an answer on a question
+    * Output Example: your score is 2/40
+* The program should accept choice from the user
+    * Input Example:  selected an answer on a question
+    * Output Example: your score is 2/40
+* The program should recognise right answers
+   * Input Example: selected 4 right answers
+    * Output Example: your score is 8/40
+* The program should recognise wrong answers
+    * Input Example: selected 4 wrong answers
+    * Output Example: your score is 36/40
+* The program should display user's final score
+    * Input Example: selected all right answers
+    * Output Example: your score is 40/40
 
 ## Known Bugs
 There are no known bugs yet.
